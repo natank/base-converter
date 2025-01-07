@@ -1,0 +1,17 @@
+{
+  "name": "base-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nati Kamusher <natan.kamusher@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "math",
+    "converter",
+    "base",
+    "numbers"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
