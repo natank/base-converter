@@ -1,5 +1,5 @@
 {
-  "name": "base-converter",
+  "name": "basecraft",
   "version": "1.0.0",
   "description": "A simple base converter library",
   "main": "build/index.js",
@@ -10,12 +10,12 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:natank/base-converter.git "
+    "url": "git@github.com:natank/basecraft.git"
   },
   "bugs": {
-    "url": "git@github.com:natank/base-converter/issues"
+    "url": "git@github.com:natank/basecraft/issues"
   },
-  "homepage": "git@github.com:natank/base-converter.git/#readme",
+  "homepage": "git@github.com:natank/basecraft.git/#readme",  
   "scripts": {
     "check-types": "tsc --noEmit",
     "build:js": "tsc",
