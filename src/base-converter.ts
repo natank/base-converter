@@ -109,10 +109,10 @@ export class BaseConverter {
   }
   convertFromDecimalToBaseN(decimalNumber: number, baseTo: number, precision = 2): string {
     this.validateDecimalNumber(decimalNumber, baseTo, precision);
-    let numberToConvertCopy = decimalNumber;
+    const numberToConvertCopy = decimalNumber;
     const decimalPart = numberToConvertCopy % 1;
-    let integerPart = Math.floor(numberToConvertCopy);
-    let convertedIntegerPart = this.convertIntegerPart(integerPart, baseTo);
+    const integerPart = Math.floor(numberToConvertCopy);
+    const convertedIntegerPart = this.convertIntegerPart(integerPart, baseTo);
     if (decimalPart) {
       const convertedDecimalPart = this.convertDecimalPart(decimalPart, baseTo, precision);
       return `${convertedIntegerPart}${this.delimiter}${convertedDecimalPart}`;
