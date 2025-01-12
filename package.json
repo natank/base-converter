@@ -1,6 +1,6 @@
 {
   "name": "basecraft",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple base converter library",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -32,7 +32,10 @@
     "pre-commit": "npm-run-all check-types lint",
     "postinstall": "husky",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "prepare": "husky install" 
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
