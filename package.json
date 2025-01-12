@@ -1,6 +1,6 @@
 {
   "name": "basecraft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple base converter library",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -15,11 +15,11 @@
   "bugs": {
     "url": "git@github.com:natank/basecraft/issues"
   },
-  "homepage": "git@github.com:natank/basecraft.git/#readme",  
+  "homepage": "git@github.com:natank/basecraft.git/#readme",
   "scripts": {
     "check-types": "tsc --noEmit",
     "build:js": "tsc",
-    "build": "npm-run-all cleann build:js",
+    "build": "npm-run-all clean build:js",
     "clean": "rimraf build",
     "test": "jest",
     "test:clear-cache": "jest --clearCache",
