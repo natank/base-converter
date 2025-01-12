@@ -21,7 +21,8 @@
     "docs: build": "typedoc",
     "docs:serve": "serve docs",
     "serve-docs": "npm-run-all docs:*",
-    "pre-commit": "npm-run-all check-types lint",
+    "pre-commit": "npm-run-all check-types lint coverage",
+    "pre-push": "npm-run-all check-types lint test",
     "postinstall": "husky",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
