@@ -1,10 +1,10 @@
 {
   "name": "basecraft",
-  "version": "1.0.3",
+  "version": "1.0.10",
   "description": "A simple base converter library",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "type": "module",
+  "type": "commonjs",
   "author": "Nati Kamusher <natan.kamusher@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -30,12 +30,9 @@
     "docs:serve": "serve docs",
     "serve-docs": "npm-run-all docs:*",
     "pre-commit": "npm-run-all check-types lint",
-    "postinstall": "husky",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "prepare": "husky install" 
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
