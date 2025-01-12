@@ -8,6 +8,14 @@
   "author": "Nati Kamusher <natan.kamusher@gmail.com>",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:natank/base-converter.git "
+  },
+  "bugs": {
+    "url": "git@github.com:natank/base-converter/issues"
+  },
+  "homepage": "git@github.com:natank/base-converter.git/#readme",
   "scripts": {
     "check-types": "tsc --noEmit",
     "build:js": "tsc",
