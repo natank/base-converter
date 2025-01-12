@@ -110,6 +110,7 @@ describe('convertFromDecimalToBaseN', () => {
       expect(converter.convert('10.1', { fromBase: 10, toBase: 10 })).toEqual('10.09');
       expect(converter.convert('10.1', { fromBase: 10, toBase: 2 })).toEqual('1010.00');
       expect(converter.convert('10.1', { fromBase: 10, toBase: 2, precision: 4 })).toEqual('1010.0001');
+      expect(converter.convert('10.1', { fromBase: 10, toBase: 2, precision: 4 })).toEqual('1010.0001');
       expect(converter.convert('10.9', { fromBase: 10, toBase: 2, precision: 4 })).toEqual('1010.1110');
       // expect(converter.convert('10.9', { fromBase: 10, toBase: 16, precision: 4 })).toEqual('A.E666');
     });
