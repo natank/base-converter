@@ -21,7 +21,9 @@
     "docs:serve": "serve docs",
     "serve-docs": "npm-run-all docs:*",
     "pre-commit": "npm-run-all check-types  lint",
-    "prepare": "husky"
+    "postinstall": "husky",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
 
   },
   "devDependencies": {
