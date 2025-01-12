@@ -1,4 +1,5 @@
 import { lettersToNumbersMap } from './constants/letters-to-numbers-map';
+import { ConvertOptions } from './interfaces/convert-options';
 import { inverseObject } from './utils/inverse-object';
 import { isInteger } from './utils/is-integer';
 
@@ -117,5 +118,17 @@ export class BaseConverter {
       return `${convertedIntegerPart}${this.delimiter}${convertedDecimalPart}`;
     }
     return convertedIntegerPart;
+  }
+  /**
+   * This function allows you to convert a number from a base to another base
+   * @param numberToConvert The number to convert
+   * @param fromBase The base of the number to convert
+   * @param toBase The base to convert the number to
+   * @param precision The precision of the number to convert
+   * @returns The number converted to the base specified
+   */
+  convert(numberToConvert: string, { fromBase, toBase, precision = 2 }: ConvertOptions) {
+    const decimalNumber = this.convertFromBaseNToDecimal(numberToConvert, fromBase);
+    return this.convertFromDecimalToBaseN(decimalNumber, toBase, precision);
   }
 }
