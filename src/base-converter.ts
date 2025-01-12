@@ -85,6 +85,7 @@ export class BaseConverter {
   }
 
   private convertDecimalPart(decimalPart: number, baseTo: number, precision: number) {
+    // some comment
     let result = '';
     let decimalPartCopy = decimalPart;
     for (let i = 0; i < precision; i++) {
