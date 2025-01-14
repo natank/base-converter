@@ -1,8 +1,8 @@
 name: Testing on pull request
-on
+on:
   pull_request:
-    types: [opened, synchronize, edited ]
-jobs: 
+    types: [opened, synchronize, edited]
+jobs:
   test:
     runs-on: ubuntu-latest
     steps:
@@ -13,6 +13,6 @@ jobs:
           node-version: '23 .x'
       - name: Install dependencies
         run: |
-           yarn --frozen-lockfile
+          yarn --frozen-lockfile
       - name: Run tests
-           run yarn test 
+          run yarn test
